@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Floppy the Frog</title>
+    <link href="https://fonts.googleapis.com/css?family=Give+You+Glory" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="froggame.js"></script>
+    <script type="text/javascript" src="frogsprite.js"></script>
+    <style>
+        body {
+            background: url("images/game-background.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+        canvas {
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            top: 50%;
+            transform: translate(0, 13%);
+            z-index: 0;
+            bottom: 40px;
+        }
+        div {
+            font-family: 'Give You Glory', cursive;
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+            margin: 10px 0 0 0;
+            text-align: center;
+            /*position: relative;*/
+            /*top: 160px;*/
+            /*left: 300px;*/
+            /*z-index: 1;*/
+        }
+        audio {
+            position: relative;
+            left: 718px;
+        }
+        #score {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body onload="main()">
+    <audio controls autoplay>
+        <!--<source src="horse.ogg" type="audio/ogg">-->
+        <source src="Super%20Mario%20Bros.%20-%20Full.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div id="score">Your Score: 0</div>
+    <div id="best">High Score: 0</div>
+</body>
+</html>
